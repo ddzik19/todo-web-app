@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    padding: 0.5em;
+}
+
+.banner{
+    width: auto;
+    height: 500px;
+    background-image:linear-gradient(rgb(253, 246, 255), rgba(255, 255, 255, 0));
+}
+.banner-content{
+    padding: 15em;
+    text-align: center;
+    vertical-align: middle;
+}
+.banner-content h1{
+    font-size: 80px;
+}
+.banner-content p{
+    font-size: large;
+}
+.line {
+    border: 0;
+    width: auto;
+    height: 1px;
+    background-color: #0000006e;
+}
