@@ -1,3 +1,8 @@
+/* Fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*  */
+
 .parent{
     width: 100%;
     padding: 0;
@@ -17,7 +22,7 @@
     padding: 5em;
     width: auto;
     height: 400px;
-    background-image: linear-gradient(rgb(237, 180, 253)80%,rgba(255, 255, 255, 0));
+    height: auto;
 }
 .banner-content{
     text-align: center;
@@ -29,18 +34,59 @@
 .banner-content p{
     font-size: large;
 }
-.line {
-    border: 0;
-    width: auto;
-    height: 1px;
-    background-color: #0000006e;
+
+
+/* Mobile styles that do not need to be in media */
+.mobile-nav{
+    display: none;
 }
-
-
-/* media queries */
+#burger{
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: black;
+  background: linear-gradient(45deg, #f5e3a7 10%, #ffffff);;
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
+  border-radius: 0% 0% 0% 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+#quit{
+  position: fixed;
+  top: 0;
+  color: black;
+  font-size: 32px;
+  padding: 16px;
+  display: none;
+  cursor: pointer;
+}
+#links{
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  padding: 25vh 0;
+  justify-content: space-around;
+}
+#links a{
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1em;
+  color: black;
+  font-size: 2em;
+  font-family: 'Roboto';
+  z-index: 10;
+}
+/* media queries/ mobile stuff */
 @media only screen and (max-width:900px) {
     .child{
         width:100%;
     }
-    
+    #desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
 }

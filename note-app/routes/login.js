@@ -1,10 +1,10 @@
-const reg = {
+const login = {
     // index method - responsible for creating and rendering the view
     index(request, response) {
         const viewData = {
-            title: 'Register | Note App',
+            title: 'Login | Note App',
         };
-        response.render('register', viewData);
+        response.render('login', viewData);
     }
 };
 
