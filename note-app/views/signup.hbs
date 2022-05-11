@@ -1,0 +1,20 @@
+{{> navbar id='register'}}
+
+<form class="ui stacked segment form" action="/register" method="POST">
+  <h3 class="ui header">Sign Up</h3>
+  <div class="field">
+    <div class="field">
+      <label for="username">Username</label>
+      <input placeholder="bob123" type="text"  name="username" autofocus required>
+    </div>
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input placeholder="Email" type="text" name="email" required>
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <input type="password" name="password" required>
+  </div>
+  <button class="ui blue submit button">Submit</button>
+</form>

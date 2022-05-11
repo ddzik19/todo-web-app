@@ -11,11 +11,12 @@ const about = require('./routes/about');
 
 
 router.get('/', index.index);
-router.get('/register', reg.index);
+router.get('/signup', reg.signup);
 router.get('/about', about.index);
 
 // posting routes
-
+router.post('/register', reg.register);
+router.post('/authenticate', reg.authenticate);
 
 // export router module
 module.exports = router;

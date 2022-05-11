@@ -1,12 +1,24 @@
+const {
+    request
+} = require('express');
+const userstore = require('../models/user-store.js');
+const uuid = require('uuid');
+
 const reg = {
-    // index method - responsible for creating and rendering the view
-    index(request, response) {
+    signup(request, response) {
         const viewData = {
-            title: 'Register | Note App',
+            title: 'Login to the Service',
         };
-        response.render('register', viewData);
-    }
+        response.render('signup', viewData);
+    },
+    register(req, res) {
+        const newUser = request.body;
+        newUser.id = uuid();
+        userstore.addUser(newUser);
+        res.redirect('/');
+    },
+    authenticate(req, res) {},
 };
 
 // export the dashboard module
-module.exports = about;
+module.exports = reg;
