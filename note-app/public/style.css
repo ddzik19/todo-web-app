@@ -11,14 +11,14 @@
     align-items: center;
     justify-content: center;
 }
-.main-content{
+.child{
+    width: auto;
     margin-left: 20%;
     margin-right: 20%;
 }
 .nav{
     padding: 0.5em;
 }
-
 .banner{
     padding: 5em;
     width: auto;
@@ -46,7 +46,7 @@
   right: 0;
   top: 0;
   color: black;
-  background: linear-gradient(45deg, #f5e3a7 10%, #ffffff);;
+  background: linear-gradient(45deg, #efbbff 10%, #ffffff);;
   font-size: 32px;
   padding: 16px 16px 32px 32px;
   border-radius: 0% 0% 0% 100%;

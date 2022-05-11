@@ -6,7 +6,6 @@ const {
 const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 
 const port = process.env.PORT || 3000
 
@@ -23,7 +22,6 @@ app.engine('.hbs', engine({
 }));
 app.set('view engine', '.hbs');
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: false
