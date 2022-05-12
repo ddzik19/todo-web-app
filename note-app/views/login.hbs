@@ -1,1 +1,15 @@
 {{> navbar id="login"}}
+
+<title>{{title}}</title>
+<form class="ui segment form" action="/login" method="POST">
+  <h3 class="ui header">Login</h3>
+  <div class="field">
+    <label for="email">Email</label>
+    <input placeholder="Email" type="text" name="email" required>
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <input type="password" name="password" required>
+  </div>
+  <button class="ui blue submit button">Submit</button>
+</form>

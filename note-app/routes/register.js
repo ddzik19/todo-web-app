@@ -38,6 +38,12 @@ const reg = {
         // console.log(newUser);
         res.redirect('/');
     },
+    login(request, response) {
+        const viewData = {
+            title: 'Login | Note App',
+        };
+        response.render('login', viewData);
+    },
     authenticate(req, res) {},
 };
 

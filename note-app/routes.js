@@ -7,12 +7,13 @@ const router = express.Router();
 // import controllers
 const index = require('./routes/index');
 const reg = require('./routes/register');
-const about = require('./routes/about');
 
 
+// getting routes
 router.get('/', index.index);
 router.get('/signup', reg.signup);
-router.get('/about', about.index);
+router.get('/login', reg.login);
+
 
 // posting routes
 router.post('/register', reg.register);
