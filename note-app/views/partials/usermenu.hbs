@@ -1,0 +1,29 @@
+<nav class="nav">
+    <div class="ui secondary menu" id="desktop-nav">
+        <a class="item" href="/">
+            Home
+        </a>
+        <div class="right menu">
+            <a class="item" href="#">
+            Notes
+            </a>
+            <a class="item" href="#">
+            Log out
+            </a>
+        </div>
+    </div>
+    {{!-- Mobile navigation --}}
+    {{!-- https://www.cssscript.com/morphing-mobile-hamburger-navigation/
+    
+    as creating navigation is not my thing.
+     --}}
+    <div class="mobile-nav">
+        <i id="burger" class="material-icons" onclick="burger()">menu</i>
+        <i id="quit" class="material-icons" onclick="quit()">clear</i>
+        <div id="links">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Log out</a>
+        </div>
+    </div>
+</nav>
