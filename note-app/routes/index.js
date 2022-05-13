@@ -1,11 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', {
-    title: 'Home | Note App'
-  });
-});
+const index = {
+  // index method - responsible for creating and rendering the view
+  index(request, response) {
+    const viewData = {
+      title: 'Home | Note App',
+    };
+    response.render('index', viewData);
+  }
+};
 
-module.exports = router;
+// export the dashboard module
+module.exports = index;
