@@ -5,5 +5,11 @@
         "email": "damo@gmail.com",
         "password": "123456",
         "notes": []
+    }, {
+        "id": "2q66zq9sw424jagvjj2j",
+        "username": "damo",
+        "email": "damo@damo.com",
+        "password": "12345",
+        "notes": []
     }]
 }

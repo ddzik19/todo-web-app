@@ -10,7 +10,7 @@
     "node": "10.x"
   },
   "dependencies": {
-    "@devdamo/cuid": "^1.0.1",
+    "@devdamo/cuid": "^1.0.2",
     "body-parser": "^1.20.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

@@ -44,7 +44,15 @@ const reg = {
         };
         response.render('login', viewData);
     },
-    authenticate(req, res) {},
+    authenticate(req, res) {
+        const user = userStore.getUserByEmail(req.body.email);
+        if (user) {
+            res.cookie('noteusers', user.email);
+            res.redirect('start')
+        } else {
+            res.redirect('signup');
+        }
+    },
 };
 
 module.exports = reg;
