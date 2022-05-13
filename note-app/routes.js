@@ -1,6 +1,6 @@
 'use strict';
 
-// import express and initialise router
+// import express and initialize router
 const express = require('express');
 const router = express.Router();
 
