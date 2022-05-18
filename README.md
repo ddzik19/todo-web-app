@@ -2,7 +2,7 @@
 
 The todo-web-app (have not picked a name for the websites name) is a webapp inspired by [Treollo.com](https://trello.com/en)
 
-This web app is a practice projcect created using Node.js. This is my personal project and not a school assignment. This project is also used for me to practice the correct GitHub workflow.
+This web app is a practice projcect created using Node.js and Handlebars. This is my personal project and not a school assignment. This project is also used for me to practice the correct GitHub workflow.
 
 This project is not complete and still ongoing, therefore please do not use your real information such as real emails or passwords in the web app.
 
