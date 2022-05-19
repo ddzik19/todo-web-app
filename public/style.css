@@ -16,11 +16,10 @@
 }
 .forms{
     width: auto;
-    min-height: 100vh;
     padding-top: 10%;
     padding-left: 40%;
     padding-right: 40%;
-    overflow: hidden;
+    height: 79.9vh;
 }
 .banner{
     padding: 5em;
