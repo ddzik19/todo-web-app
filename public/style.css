@@ -8,6 +8,7 @@
     margin: 0;
     background: linear-gradient(#fffafa ,#f0eae6 ) no-repeat;
     background-size: cover;
+    height: 100%;
 }
 .main-body{
     width: auto;
@@ -81,15 +82,15 @@ footer{
 }
 
 /* card lists pages */
-.workshopNav .ui.menu{
+.workshopNav .ui.secondary.menu{
+    padding: 1em;
     background:#8CC0DE;
     max-height: 50px;
     overflow: hidden;
 }
 .listContainer{
-    margin-top: 3em;
+    
 }
-
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
     display: none;
