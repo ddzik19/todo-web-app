@@ -2,6 +2,13 @@
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*  */
+.body{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#fffafa ,#f0eae6 ) no-repeat;
+    background-size: cover;
+}
 .main-body{
     width: auto;
     margin-left: 20%;
@@ -9,9 +16,11 @@
 }
 .forms{
     width: auto;
-    margin-top: 10%;
-    margin-left: 40%;
-    margin-right: 40%;
+    min-height: 100vh;
+    padding-top: 10%;
+    padding-left: 40%;
+    padding-right: 40%;
+    overflow: hidden;
 }
 .nav{
     padding: 0.5em;
@@ -32,25 +41,32 @@
 .banner-content p{
     font-size: large;
 }
-
-
+.imageFrame{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+}
+.nav .item{
+    font-size: larger;
+    font-weight:bolder;
+}
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
     display: none;
 }
-#burger{
+.burger{
   position: fixed;
   right: 0;
   top: 0;
   color: black;
-  background: linear-gradient(45deg, #efbbff 10%, #ffffff);;
+  background: linear-gradient(45deg, #8CC0DE 10%, #f0eae6);;
   font-size: 32px;
   padding: 16px 16px 32px 32px;
   border-radius: 0% 0% 0% 100%;
   transition: 1s;
   cursor: pointer;
 }
-#quit{
+.quit{
   position: fixed;
   top: 0;
   color: black;
@@ -59,7 +75,7 @@
   display: none;
   cursor: pointer;
 }
-#links{
+.links{
   display: none;
   flex-direction: column;
   width: 100vw;
@@ -67,7 +83,7 @@
   padding: 25vh 0;
   justify-content: space-around;
 }
-#links a{
+.links a{
   text-align: center;
   text-decoration: none;
   padding-top: 1em;
@@ -76,15 +92,23 @@
   font-family: 'Roboto';
   z-index: 10;
 }
+#indexform{
+    padding: 2em;
+}
 /* media queries/ mobile stuff */
 @media only screen and (max-width:900px) {
     .child{
         width:100%;
     }
-    #desktop-nav{
+    .nav{
         display: none;
     }
     .mobile-nav{
         display: block;
+    }
+    .forms{
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 20em;
     }
 }
