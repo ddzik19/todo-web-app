@@ -22,9 +22,6 @@
     padding-right: 40%;
     overflow: hidden;
 }
-.nav{
-    padding: 0.5em;
-}
 .banner{
     padding: 5em;
     width: auto;
@@ -46,9 +43,39 @@
     width: 500px;
     height: 500px;
 }
+#indexform{
+    padding: 2em;
+}
+
+/* navigation */
+.nav{
+    padding: 0.5em;
+}
 .nav .item{
     font-size: larger;
     font-weight:bolder;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    margin-top: 3em;
+    padding: 1em;
+    height: auto;
+    width: 100%;
+    background-color: #8CC0DE;
+}
+.footerContent ul{
+    list-style: none;
+    font-weight: bold;
+}
+.footerContent ul a{
+    text-decoration: none;
+    color: black;
+}
+.footerContent ul li{
+    padding: 0 10px;
+    display: inline-block;
 }
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
@@ -59,7 +86,7 @@
   right: 0;
   top: 0;
   color: black;
-  background: linear-gradient(45deg, #8CC0DE 10%, #f0eae6);;
+  background: linear-gradient(45deg, #8CC0DE 10%, #f0eae6);
   font-size: 32px;
   padding: 16px 16px 32px 32px;
   border-radius: 0% 0% 0% 100%;
@@ -91,9 +118,6 @@
   font-size: 2em;
   font-family: 'Roboto';
   z-index: 10;
-}
-#indexform{
-    padding: 2em;
 }
 /* media queries/ mobile stuff */
 @media only screen and (max-width:900px) {
