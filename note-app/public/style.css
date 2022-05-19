@@ -3,8 +3,11 @@
 
 /*  */
 .body{
+    width: auto;
     padding: 0;
     margin: 0;
+    background: linear-gradient(#fff5f5 ,#f0eae6 ) no-repeat;
+    background-size: cover;
 }
 .main-body{
     width: auto;
@@ -13,9 +16,11 @@
 }
 .forms{
     width: auto;
-    margin-top: 10%;
-    margin-left: 40%;
-    margin-right: 40%;
+    min-height: 100vh;
+    padding-top: 10%;
+    padding-left: 40%;
+    padding-right: 40%;
+    overflow: hidden;
 }
 .nav{
     padding: 0.5em;
@@ -36,12 +41,15 @@
 .banner-content p{
     font-size: large;
 }
-.yaya{
+.imageFrame{
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500px;
 }
-
+.nav .item{
+    font-size: larger;
+    font-weight: bolder;
+}
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
     display: none;
@@ -94,5 +102,10 @@
     }
     .mobile-nav{
         display: block;
+    }
+    .forms{
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 20em;
     }
 }
