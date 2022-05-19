@@ -6,7 +6,7 @@
     width: auto;
     padding: 0;
     margin: 0;
-    background: linear-gradient(#fff5f5 ,#f0eae6 ) no-repeat;
+    background: linear-gradient(#fffafa ,#f0eae6 ) no-repeat;
     background-size: cover;
 }
 .main-body{
@@ -48,7 +48,7 @@
 }
 .nav .item{
     font-size: larger;
-    font-weight: bolder;
+    font-weight:bolder;
 }
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
@@ -59,7 +59,7 @@
   right: 0;
   top: 0;
   color: black;
-  background: linear-gradient(45deg, #efbbff 10%, #ffffff);;
+  background: linear-gradient(45deg, #8CC0DE 10%, #f0eae6);;
   font-size: 32px;
   padding: 16px 16px 32px 32px;
   border-radius: 0% 0% 0% 100%;
@@ -91,6 +91,9 @@
   font-size: 2em;
   font-family: 'Roboto';
   z-index: 10;
+}
+#indexform{
+    padding: 2em;
 }
 /* media queries/ mobile stuff */
 @media only screen and (max-width:900px) {
