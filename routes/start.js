@@ -1,6 +1,3 @@
-var express = require('express');
-var router = express.Router();
-
 const start = {
     // index method - responsible for creating and rendering the view
     index(request, response) {

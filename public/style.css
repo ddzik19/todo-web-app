@@ -57,12 +57,15 @@
 
 /* footer */
 footer{
+    bottom:0;
+    position: relative;
     text-align: center;
     margin-top: 3em;
     padding: 1em;
     height: auto;
     width: 100%;
     background-color: #8CC0DE;
+    bottom:0;
 }
 .footerContent ul{
     list-style: none;
@@ -76,6 +79,17 @@ footer{
     padding: 0 10px;
     display: inline-block;
 }
+
+/* card lists pages */
+.workshopNav .ui.menu{
+    background:#8CC0DE;
+    max-height: 50px;
+    overflow: hidden;
+}
+.listContainer{
+    margin-top: 3em;
+}
+
 /* Mobile styles that do not need to be in media */
 .mobile-nav{
     display: none;

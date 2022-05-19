@@ -7,7 +7,8 @@ const router = express.Router();
 // import controllers
 const index = require('./routes/index');
 const reg = require('./routes/register');
-const start = require('./routes/start');
+const start = require('./routes/accounts');
+
 
 // getting routes
 router.get('/', index.index);
