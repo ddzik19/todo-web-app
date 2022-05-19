@@ -31,8 +31,7 @@ const reg = {
             id: id,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
-            notes: []
+            password: req.body.password
         }
         userStore.addUser(newUser);
         // console.log(newUser);
