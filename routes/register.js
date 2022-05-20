@@ -48,7 +48,7 @@ const reg = {
         const user = userStore.getUserByEmail(req.body.email);
         if (user) {
             res.cookie('noteusers', user.email);
-            res.redirect('start')
+            res.redirect('start/' + user.id);
         } else {
             res.redirect('signup');
         }

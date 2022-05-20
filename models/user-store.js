@@ -27,11 +27,12 @@ const userStore = {
     addNote(id, note) {
         const user = this.getUserById(id);
         user.notes.push(note);
+        console.log(note);
     },
     getUserNotes(id) {
         for (var i = 0; i < users.length; i++) {
             if (users[i].id == id) {
-                return users[i].notes[i];
+                return users[i].notes;
             }
         }
     }
