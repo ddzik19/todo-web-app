@@ -8,13 +8,13 @@ const start = {
         const loggedInUser = accounts.getCurrentUser(req);
 
         const viewData = {
-            title: 'Me | Note App',
+            title: loggedInUser.username + ' | Note App',
             notes: userStore.getUserNotes(loggedInUser.id)
         };
         res.render('start', viewData);
     },
     addNote(req, res) {
-        const userId = req.param.id;
+        const userId = req.params.id;
 
         let date = new Date().toLocaleDateString()
         const newNote = {
@@ -25,7 +25,7 @@ const start = {
         // db.push("notes", newNote);
         userStore.addNote(userId, newNote);
         // refreshing page
-        res.redirect("/start");
+        res.redirect("start/" + userId);
     },
 };
 

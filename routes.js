@@ -20,7 +20,7 @@ router.get('/start/:id', start.index);
 // posting routes
 router.post('/register', reg.register);
 router.post('/authenticate', reg.authenticate);
-router.post('/start/:id/addNote/:id', start.addNote);
+router.post('/start/:id/addNote', start.addNote);
 
 // export router module
 module.exports = router;
