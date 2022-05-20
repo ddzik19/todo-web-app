@@ -31,9 +31,10 @@ const reg = {
             id: id,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password
+            password: req.body.password,
+            notes: []
         }
-        userStore.addUser(newUser);
+        db.push("users", newUser);
         // console.log(newUser);
         res.redirect('/');
     },
@@ -52,6 +53,10 @@ const reg = {
             res.redirect('signup');
         }
     },
+    getCurrentUser(request) {
+        const userEmail = request.cookies.noteusers;
+        return userStore.getUserByEmail(userEmail);
+    }
 };
 
 module.exports = reg;
