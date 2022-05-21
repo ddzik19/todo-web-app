@@ -25,7 +25,7 @@ const userStore = {
         }
     },
     addNote(id, note) {
-        const user = this.getUserById(id);
+        const user = this.getUserNotes(id);
         user.notes.push(note);
         console.log(note)
     },

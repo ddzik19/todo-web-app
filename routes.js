@@ -14,13 +14,13 @@ const start = require('./routes/start');
 router.get('/', index.index);
 router.get('/signup', reg.signup);
 router.get('/login', reg.login);
-router.get('/start/:id', start.index);
+router.get('/start', start.index);
 
 
 // posting routes
 router.post('/register', reg.register);
 router.post('/authenticate', reg.authenticate);
-router.post('/start/:id/addNote', start.addNote);
+router.post('/start/addNote', start.addNote);
 
 // export router module
 module.exports = router;

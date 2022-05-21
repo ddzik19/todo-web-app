@@ -20,12 +20,14 @@ const start = {
         const newNote = {
             title: req.body.title,
             creationDate: date
-        }
+        };
         // // adding new note
-        // db.push("notes", newNote);
         userStore.addNote(userId, newNote);
+
+        console.log(userId);
+
         // refreshing page
-        res.redirect("start/" + userId);
+        res.redirect("/start");
     },
 };
 

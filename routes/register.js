@@ -1,6 +1,3 @@
-const {
-    request
-} = require('express');
 const userStore = require('../models/user-store')
 const jsoning = require('jsoning');
 const db = new jsoning('user-store.json');
@@ -48,7 +45,7 @@ const reg = {
         const user = userStore.getUserByEmail(req.body.email);
         if (user) {
             res.cookie('noteusers', user.email);
-            res.redirect('start/' + user.id);
+            res.redirect('start');
         } else {
             res.redirect('signup');
         }
