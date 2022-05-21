@@ -8,6 +8,7 @@
     margin: 0;
     background: linear-gradient(#fffafa ,#f0eae6 ) no-repeat;
     background-size: cover;
+    height: 100%;
 }
 .main-body{
     width: auto;
@@ -16,11 +17,10 @@
 }
 .forms{
     width: auto;
-    min-height: 100vh;
     padding-top: 10%;
     padding-left: 40%;
     padding-right: 40%;
-    overflow: hidden;
+    height: 79.9vh;
 }
 .banner{
     padding: 5em;
@@ -58,12 +58,15 @@
 
 /* footer */
 footer{
+    bottom:0;
+    position: relative;
     text-align: center;
     margin-top: 3em;
     padding: 1em;
     height: auto;
     width: 100%;
     background-color: #8CC0DE;
+    bottom:0;
 }
 .footerContent ul{
     list-style: none;
@@ -76,6 +79,17 @@ footer{
 .footerContent ul li{
     padding: 0 10px;
     display: inline-block;
+}
+
+/* card lists pages */
+.workshopNav .ui.secondary.menu{
+    padding: 1em;
+    background:#8CC0DE;
+    max-height: 50px;
+    overflow: hidden;
+}
+.listContainer{
+    
 }
 /* Mobile styles that do not need to be in media */
 .mobile-nav{

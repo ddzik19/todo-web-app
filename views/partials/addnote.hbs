@@ -1,21 +1,12 @@
 <div class="ui cards">
-    <div class="card">
-    <div class="content">
-      <div class="header">
-        {{notename}}
+  <div class="card">
+    <form class="ui form" action="/start/addNote" method="POST">
+      <div class="field">
+        <input type="text" name="title" id="title" placeholder="Title">
       </div>
-      <div class="meta">
-        {{date}}
+      <div class="extra content">
+        <button class="ui submit button" style="width: 100%;">Create</button>
       </div>
-      <div class="description">
-        {{desc}}
-      </div>
-    </div>
-    <div class="extra content">
-      <div class="ui two buttons">
-        <a class="ui basic green button" href="" >Edit</a>
-        <a class="ui basic red button" href="" >Delete</a>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
