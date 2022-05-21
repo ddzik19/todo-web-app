@@ -20,10 +20,9 @@ const start = {
         let date = new Date().toLocaleDateString()
         const newNote = {
             uid: loggedInUser.id,
-            noteId: cuid(20, 1),
+            id: cuid(20, 1),
             title: req.body.title,
-            creationDate: date,
-            content: []
+            creationDate: date
         };
         // // adding new note
         userStore.addNote(newNote);
