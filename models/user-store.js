@@ -1,14 +1,16 @@
-// const store = require('../user-store.json')
-// var users = store.users;
-
 const jsoning = require('jsoning');
 const db = new jsoning('user-store.json');
+const db2 = new jsoning('note-store.json');
 
 const users = db.get("users");
+const notes = db2.get("notes");
 
 const userStore = {
+    getAllUsers() {
+        return users;
+    },
     addUser(user) {
-        users.push(user);
+        db.push("users", user);
     },
     getUserById(id) {
         for (var i = 0; i < users.length; i++) {
@@ -24,15 +26,13 @@ const userStore = {
             }
         }
     },
-    addNote(id, note) {
-        const user = this.getUserNotes(id);
-        user.notes.push(note);
-        console.log(note)
+    addNote(note) {
+        db2.push("notes", note)
     },
     getUserNotes(id) {
-        for (var i = 0; i < users.length; i++) {
-            if (users[i].id == id) {
-                return users[i].notes;
+        for (var i = 0; i < notes.length; i++) {
+            if (notes[i].uid == id) {
+                return notes[i];
             }
         }
     }

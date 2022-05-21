@@ -1,33 +1,8 @@
 {
     "users": [{
-        "id": "180826df1050g6j6y851",
-        "username": "damo",
-        "email": "damo@gmail.com",
-        "password": "12345",
-        "notes": [{
-            "title": "hello",
-            "creationDate": "10/11/2011"
-        }]
-    }, {
-        "id": "slgb7jihq6l783irczao",
-        "username": "damo123",
-        "email": "damo123@gmail.com",
-        "password": "12345",
-        "notes": [{
-            "title": "hello",
-            "creationDate": "10/11/2011"
-        }, {
-            "title": "hello",
-            "creationDate": "10/11/2011"
-        }, {
-            "title": "hello",
-            "creationDate": "10/11/2011"
-        }]
-    }, {
-        "id": "gapd09797kp111321vs7",
-        "username": "yaya",
-        "email": "yaya@gmail.com",
-        "password": "12345",
-        "notes": []
+        "id": "298785e709xij1c08f90",
+        "username": "bob123",
+        "email": "damo1234@gmail.com",
+        "password": "123"
     }]
 }

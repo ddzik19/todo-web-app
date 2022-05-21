@@ -1,6 +1,7 @@
 const userStore = require('../models/user-store')
-
 const accounts = require('../routes/register')
+const cuid = require("@devdamo/cuid")
+
 
 const start = {
     index(req, res) {
@@ -14,17 +15,18 @@ const start = {
         res.render('start', viewData);
     },
     addNote(req, res) {
-        const userId = req.params.id;
+        const loggedInUser = accounts.getCurrentUser(req);
 
         let date = new Date().toLocaleDateString()
         const newNote = {
+            uid: loggedInUser.id,
+            noteId: cuid(20, 1),
             title: req.body.title,
-            creationDate: date
+            creationDate: date,
+            content: []
         };
         // // adding new note
-        userStore.addNote(userId, newNote);
-
-        console.log(userId);
+        userStore.addNote(newNote);
 
         // refreshing page
         res.redirect("/start");
