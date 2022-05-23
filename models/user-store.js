@@ -30,16 +30,20 @@ const userStore = {
         db2.push("notes", note)
     },
     deleteNote(id) {
-        for (var i = 0; i < notes.length; i++) {
-            if (notes[i].id == id) {
-                return delete notes[i];
+        try {
+            for (var i = 0; i < notes.length; i++) {
+                if (notes[i].nid == id) {
+                    return notes.splice(i, 1);
+                }
             }
+        } catch (err) {
+            return console.log("Error in deleteNotes function at line 33")
         }
     },
-    getUserNotes(uid) {
+    getUserNotes(id) {
         var unotes = []
         for (var i = 0; i < notes.length; i++) {
-            if (notes[i].uid == uid) {
+            if (notes[i].uid == id) {
                 unotes.push(notes[i]);
             }
         }

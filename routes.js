@@ -15,7 +15,7 @@ router.get('/', index.index);
 router.get('/signup', reg.signup);
 router.get('/login', reg.login);
 router.get('/start', start.index);
-
+router.get('/start/deleteNote/:nid', start.deleteNote);
 
 // posting routes
 router.post('/register', reg.register);
