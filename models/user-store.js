@@ -1,76 +1,84 @@
-const jsoning = require('jsoning');
-const db = new jsoning('user-store.json');
-const db2 = new jsoning('note-store.json');
+const fs = require("fs");
 
-const users = db.get("users");
-const notes = db2.get("notes");
+const data = require("../user-store.json")
 
 const userStore = {
     getAllUsers() {
-        return users;
+        return data.users;
     },
     addUser(user) {
-        db.push("users", user);
+        data.users.push(user);
+        this.saveData();
     },
     getUserById(id) {
-        for (var i = 0; i < users.length; i++) {
-            if (users[i].id == id) {
-                return users[i];
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == id) {
+                    return db.users[i];
+                }
             }
+        } catch (err) {
+            console.log(err + ": in getUserById at line 15 in  user-store.js")
         }
     },
     getUserByEmail(email) {
-        for (var i = 0; i < users.length; i++) {
-            if (users[i].email == email) {
-                return users[i];
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].email == email) {
+                    return data.users[i];
+                }
+            }
+        } catch (err) {
+            console.log(err + ": in getUserByEmail at line 22 user-store.js")
+        }
+    },
+    addNote(id, note) {
+        for (var i = 0; i < data.users.length; i++) {
+            if (data.users[i].id == id) {
+                data.users[i].notes.push(note);
+                this.saveData();
+                return;
             }
         }
     },
-    addNote(note) {
-        db2.push("notes", note)
-    },
-    getUserNotes(uid) {
-        var unotes = []
-        for (var i = 0; i < notes.length; i++) {
-            if (notes[i].uid == uid) {
-                unotes.push(notes[i]);
+    deleteNote(uid, nid) {
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == uid) {
+                    const unotes = this.getUserNotes(uid);
+                    for (var x = 0; x < unotes.length; x++) {
+                        if (unotes[x].nid == nid) {
+                            unotes.splice(x, 1);
+                            this.saveData();
+                            return;
+                        }
+                    }
+                }
             }
+        } catch (err) {
+            return console.log(err + ": in deleteNotes function at line 33 user-store.js");
         }
-        return unotes;
+    },
+    getUserNotes(id) {
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == id) {
+                    return data.users[i].notes;
+                }
+            }
+            return unotes;
+        } catch (err) {
+            console.log(err + ": in getUserNotes at line 45 user-store.js");
+        }
+    },
+    saveData() {
+        fs.writeFileSync("user-store.json", JSON.stringify(data), "utf8", (err) => {
+            if (err) console.log(err + ": in saveData at line 74 user-store.js");
+            console.log("data saved!");
+            console.log(data);
+        });
     }
 }
 
-// // used to write and read file
-// const fs = require('fs')
-// const data = fs.readFileSync('user-store.json');
-// // parsing the json file
-// const parsedData = JSON.parse(data);
-
-// console.log(parsedData)
-
-// const userStore = {
-//     addUser(user) {
-//         fs.writeFileSync('user-store.json', JSON.stringify(user), null, 2), (err) => {
-//             if (err) {
-//                 console.log("An error occurred ", err)
-//                 return;
-//             }
-//             console.log("Data saved successfully.")
-//         };
-//     },
-//     addNote(id, note) {
-
-//     },
-//     getAllUsers() {
-//         return users;
-//     },
-//     getUserByEmail(email) {
-//         for (var i = 0; i < parsedData.users.length; i++) {
-//             if (parsedData.users[i].email == email) {
-//                 return parsedData.users[i];
-//             }
-//         }
-//     }
-// }
 
 module.exports = userStore;

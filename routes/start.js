@@ -19,17 +19,25 @@ const start = {
 
         let date = new Date().toLocaleDateString()
         const newNote = {
-            uid: loggedInUser.id,
-            id: cuid(20, 1),
+            nid: cuid(20, 1),
             title: req.body.title,
             creationDate: date
         };
         // // adding new note
-        userStore.addNote(newNote);
-
+        userStore.addNote(loggedInUser.id, newNote);
         // refreshing page
         res.redirect("/start");
     },
+    deleteNote(req, res) {
+        const loggedInUser = accounts.getCurrentUser(req);
+        // getting the id of the note
+        const id = req.params.nid;
+
+        // passing the id to the deleteNote function in userStore
+        userStore.deleteNote(loggedInUser.id, id)
+        // refreshing page
+        res.redirect("/start")
+    }
 };
 
 // export the dashboard module
