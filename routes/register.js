@@ -26,7 +26,8 @@ const reg = {
             id: id,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password
+            password: req.body.password,
+            notes: []
         }
         userStore.addUser(newUser)
         res.redirect('/');
