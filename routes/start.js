@@ -9,7 +9,7 @@ const start = {
         const loggedInUser = accounts.getCurrentUser(req);
 
         const viewData = {
-            title: 'Note App',
+            title: loggedInUser.username + ' | Note App',
             notes: userStore.getUserNotes(loggedInUser.id)
         };
         res.render('start', viewData);
@@ -29,10 +29,12 @@ const start = {
         res.redirect("/start");
     },
     deleteNote(req, res) {
+        const loggedInUser = accounts.getCurrentUser(req);
         // getting the id of the note
         const id = req.params.nid;
+
         // passing the id to the deleteNote function in userStore
-        userStore.deleteNote(id)
+        userStore.deleteNote(loggedInUser.id, id)
         // refreshing page
         res.redirect("/start")
     }

@@ -10,10 +10,6 @@
         "username": "damo123",
         "email": "damo123@gmail.com",
         "password": "123",
-        "notes": [{
-            "nid": "f29p9e125og3o50cua7a",
-            "title": "dada",
-            "creationDate": "24/05/2022"
-        }]
+        "notes": []
     }]
 }

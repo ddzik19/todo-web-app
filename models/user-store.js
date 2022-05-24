@@ -1,71 +1,3 @@
-// const jsoning = require('jsoning');
-// const db = new jsoning('user-store.json');
-// const db2 = new jsoning('note-store.json');
-
-// const users = db.get("users");
-// const notes = db2.get("notes");
-
-// const userStore = {
-//     getAllUsers() {
-//         return users;
-//     },
-//     addUser(user) {
-//         db.push("users", user);
-//     },
-//     getUserById(id) {
-//         try {
-//             for (var i = 0; i < users.length; i++) {
-//                 if (users[i].id == id) {
-//                     return users[i];
-//                 }
-//             }
-//         } catch (err) {
-//             console.log(err + ": in getUserById at line 15 in  user-store.js")
-//         }
-//     },
-//     getUserByEmail(email) {
-//         try {
-//             for (var i = 0; i < users.length; i++) {
-//                 if (users[i].email == email) {
-//                     return users[i];
-//                 }
-//             }
-//         } catch (err) {
-//             console.log(err + ": in getUserByEmail at line 22 user-store.js")
-//         }
-//     },
-//     addNote(note) {
-//         db2.push("notes", note)
-//     },
-//     deleteNote(id) {
-//         try {
-//             for (var i = 0; i < notes.length; i++) {
-//                 if (notes[i].nid == id) {
-//                     // notes.splice(i, 1);
-//                     var n = JSON.stringify(notes[i]);
-//                     db2.remove("notes", n);
-//                     return;
-//                 }
-//             }
-//         } catch (err) {
-//             return console.log(err + ": in deleteNotes function at line 33 user-store.js");
-//         }
-//     },
-//     getUserNotes(id) {
-//         try {
-//             var unotes = []
-//             for (var i = 0; i < notes.length; i++) {
-//                 if (notes[i].uid == id) {
-//                     unotes.push(notes[i]);
-//                 }
-//             }
-//             return unotes;
-//         } catch (err) {
-//             console.log(err + ": in getUserNotes at line 45 user-store.js");
-//         }
-//     }
-// }
-
 const fs = require("fs");
 
 const data = require("../user-store.json")
@@ -109,13 +41,18 @@ const userStore = {
             }
         }
     },
-    deleteNote(id) {
+    deleteNote(uid, nid) {
         try {
-            for (var i = 0; i < data.notes.length; i++) {
-                if (data.notes[i].nid == id) {
-                    data.notes.splice(i, 1);
-                    this.saveData();
-                    return;
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == uid) {
+                    const unotes = this.getUserNotes(uid);
+                    for (var x = 0; x < unotes.length; x++) {
+                        if (unotes[x].nid == nid) {
+                            unotes.splice(x, 1);
+                            this.saveData();
+                            return;
+                        }
+                    }
                 }
             }
         } catch (err) {
@@ -136,7 +73,7 @@ const userStore = {
     },
     saveData() {
         fs.writeFileSync("user-store.json", JSON.stringify(data), "utf8", (err) => {
-            if (err) throw err;
+            if (err) console.log(err + ": in saveData at line 74 user-store.js");
             console.log("data saved!");
             console.log(data);
         });
