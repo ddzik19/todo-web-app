@@ -72,7 +72,7 @@ const userStore = {
         }
     },
     saveData() {
-        fs.writeFileSync("user-store.json", JSON.stringify(data), "utf8", (err) => {
+        fs.writeFileSync("user-store.json", JSON.stringify(data, null, 2), "utf8", (err) => {
             if (err) console.log(err + ": in saveData at line 74 user-store.js");
             console.log("data saved!");
             console.log(data);
