@@ -9,7 +9,7 @@
  *
  */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
-/*!
+/*!style="padding: 0;"
  * # Semantic UI 2.4.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -20221,6 +20221,7 @@ ol.ui.horizontal.list li:before,
 .ui.form ::-webkit-inner-spin-button {
   height: 1.21428571em;
 }
+
 
 .ui.form input:not([type]),
 .ui.form input[type="date"],

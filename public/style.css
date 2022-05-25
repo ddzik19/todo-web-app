@@ -11,14 +11,26 @@
     margin-bottom: 5%;
 }
 .forms-contianer{
-    height: auto;
-    width: auto;
+    width: 100%;
     padding-top: 10%;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 28%;
+    padding-right: 28%;
 }
 .forms-deco{
-    height: 100%;
+    max-height: 400px;
+}
+.forms-deco img{
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.cform{
+    border-radius: 3px;
+    box-shadow: 3px 3px rgba(177, 177, 177, 0.459);
+}
+.form-center{
+    padding-top: 5em;
+    margin-left: 1em;
+    margin-right: 2em;
 }
 .banner{
     padding: 5em;

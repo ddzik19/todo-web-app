@@ -3,25 +3,26 @@
 <title>{{title}}</title>
 <div class="forms-contianer">
   <div class="ui segment">
-    <div class="ui grid">
-      <div class="eight wide column">
+    <div class="ui grid cform">
+      <div class="eight wide column" style="padding: 0;">
         <div class="forms-deco">
-          heyyy
+          <img src="../public/images/b.jpg" alt="">
         </div>
       </div>
       <div class="eight wide column">
-        <form class="ui form" action="/authenticate" method="POST">
-          <h3 class="ui header">Login</h3>
-          <div class="field">
-            <label for="email">Email</label>
-            <input placeholder="Email" type="text" name="email" required>
-          </div>
-          <div class="field">
-            <label for="password">Password</label>
-            <input type="password" name="password" required>
-          </div>
-          <button class="ui submit button" style="width: 100%; background-color:#8CC0DE;">Continue</button>
-        </form>
+        <div class="form-center">
+          <form class="ui form" action="/authenticate" method="POST">
+            <div class="field">
+              <label for="email">Email</label>
+              <input placeholder="Email" type="text" name="email" required>
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input type="password" name="password" placeholder="********" required>
+            </div>
+            <button class="ui submit button" style="width: 100%; background-color:#8CC0DE;">Continue</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
