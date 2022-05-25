@@ -1,12 +1,10 @@
-<div class="ui cards">
-  <div class="card">
-    <form class="ui form" action="/start/addNote" method="POST">
+<div class="ui card">
+  <div class="card" style="width: 290px; height:132px">
+    <form class="ui form" action="/start/addNote" method="POST" style="margin:13px 13px 13px 13px;">
       <div class="field">
-        <input type="text" name="title" id="title" placeholder="Title">
+        <input type="text" name="title" id="title" placeholder="Title" required maxlength="20">
       </div>
-      <div class="extra content">
-        <button class="ui submit button" style="width: 100%;">Create</button>
-      </div>
+      <button class="ui attached button" style="width: 265px; border-radius:3px; margin-top:33px;">Create</button>
     </form>
   </div>
 </div>

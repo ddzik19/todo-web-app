@@ -21,7 +21,8 @@ const start = {
         const newNote = {
             nid: cuid(20, 1),
             title: req.body.title,
-            creationDate: date
+            creationDate: date,
+            content: []
         };
         // // adding new note
         userStore.addNote(loggedInUser.id, newNote);

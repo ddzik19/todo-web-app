@@ -1,15 +1,18 @@
 {
-    "users": [{
-        "id": "h4jhb4rkfv4g39xpd4g1",
-        "username": "damo",
-        "email": "damo@gmail.com",
-        "password": "123",
-        "notes": []
-    }, {
-        "id": "t7nad78g9x67e953u8i1",
-        "username": "damo123",
-        "email": "damo123@gmail.com",
-        "password": "123",
-        "notes": []
-    }]
+  "users": [
+    {
+      "id": "h4jhb4rkfv4g39xpd4g1",
+      "username": "damo",
+      "email": "damo@gmail.com",
+      "password": "123",
+      "notes": []
+    },
+    {
+      "id": "t7nad78g9x67e953u8i1",
+      "username": "damo123",
+      "email": "damo123@gmail.com",
+      "password": "123",
+      "notes": []
+    }
+  ]
 }
