@@ -6,6 +6,12 @@ This web app is a practice projcect created using Node.js and Handlebars. This i
 
 This project is not complete and still ongoing, therefore please do not use your real information such as real emails or passwords in the web app.
 
+## Note
+
+This website is not yet hosted. It will be hosted for free on [Heroku.com](https://www.heroku.com/) as it is only a project/demo of my knowledge. Maybe one day it will become more than a demo.
+
+The website will be hosted on [Heroku.com](https://www.heroku.com/) around the 30th of May as Heroku has disabled github deployment integration while they are working on a breach.
+
 ## Features
 
 This web app will allow the users to:
