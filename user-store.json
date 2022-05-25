@@ -12,43 +12,7 @@
       "username": "damo123",
       "email": "damo123@gmail.com",
       "password": "123",
-      "notes": [
-        {
-          "nid": "vntngv8b9se77ispk4o6",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "364t2ktikey2ukdg0j2h",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "8y79i96610a3f929642z",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "425408c1499c48p9q60m",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "jw30f9sb5qilp57aok4v",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "pqwe80v51pac31w9icc0",
-          "title": "d",
-          "creationDate": "25/05/2022"
-        },
-        {
-          "nid": "w1g6j678o0x5qot5u4md",
-          "title": "shopping for monday",
-          "creationDate": "25/05/2022"
-        }
-      ]
+      "notes": []
     }
   ]
 }
