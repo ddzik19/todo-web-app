@@ -10,11 +10,15 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.forms{
+.forms-contianer{
+    height: auto;
     width: auto;
     padding-top: 10%;
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.forms-deco{
+    height: 100%;
 }
 .banner{
     padding: 5em;

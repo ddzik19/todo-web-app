@@ -1,17 +1,28 @@
 {{> navbar}}
 
 <title>{{title}}</title>
-<div class="forms">
-  <form class="ui segment form" action="/authenticate" method="POST">
-    <h3 class="ui header">Login</h3>
-    <div class="field">
-      <label for="email">Email</label>
-      <input placeholder="Email" type="text" name="email" required>
+<div class="forms-contianer">
+  <div class="ui segment">
+    <div class="ui grid">
+      <div class="eight wide column">
+        <div class="forms-deco">
+          heyyy
+        </div>
+      </div>
+      <div class="eight wide column">
+        <form class="ui form" action="/authenticate" method="POST">
+          <h3 class="ui header">Login</h3>
+          <div class="field">
+            <label for="email">Email</label>
+            <input placeholder="Email" type="text" name="email" required>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+          </div>
+          <button class="ui submit button" style="width: 100%; background-color:#8CC0DE;">Continue</button>
+        </form>
+      </div>
     </div>
-    <div class="field">
-      <label for="password">Password</label>
-      <input type="password" name="password" required>
-    </div>
-    <button class="ui submit button" style="width: 100%; background-color:#8CC0DE;">Continue</button>
-  </form>
+  </div>
 </div>
