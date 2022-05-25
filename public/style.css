@@ -80,7 +80,7 @@ footer{
 
 /* card lists pages */
 .workshopNav .ui.secondary.menu{
-    padding: 1em;
+    padding: 0.5em;
     /* background:#8CC0DE; */
     max-height: 50px;
     overflow: hidden;
