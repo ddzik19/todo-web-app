@@ -52,6 +52,7 @@
 .nav .item{
     font-size: larger;
     font-weight:bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* footer */
@@ -80,9 +81,12 @@ footer{
 /* card lists pages */
 .workshopNav .ui.secondary.menu{
     padding: 1em;
-    background:#8CC0DE;
+    /* background:#8CC0DE; */
     max-height: 50px;
     overflow: hidden;
+    font-size: larger;
+    font-weight:bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
