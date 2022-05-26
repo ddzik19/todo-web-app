@@ -1,24 +1,16 @@
 {{> navbar id='register'}}
 
 <title>{{title}}</title>
-
-<div class="forms-contianer">
-  <div class="ui segment">
-    <form class="ui segment form" action="/register" method="POST">
-      <h3 class="ui header">Sign Up</h3>
-      <div class="field">
-        <label for="username">Username</label>
-        <input placeholder="bob123" type="text" name="username" autofocus required>
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input placeholder="Email" type="text" name="email" required>
-      </div>
-      <div class="field">
-        <label for="password">Password</label>
-        <input type="password" name="password" required>
-      </div>
-      <button class="ui submit button" style="width: 100%; background-color:#8CC0DE;">Continue</button>
-    </form>
+<div class="forms-container">
+  <form action="/register" method="POST" class="form">
+    <h2>SIGN UP</h2>
+    <input type="username" name="username" class="box" placeholder="johnnyboy1984" required>
+    <input type="email" name="email" class="box" placeholder="joe@bloggs.com" required>
+    <input type="password" name="passowrd" class="box" placeholder="*******" required>
+    <input type="submit" value="SIGN UP" class="submit-btn">
+    <a href="">Already have an account?</a>
+  </form>
+  <div class="form-side">
+    {{!-- <img src="../public/images/b.jpg" alt="bubbles"> --}}
   </div>
 </div>
