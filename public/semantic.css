@@ -24724,6 +24724,7 @@ Floated Menu / Item
   border-right-color: rgba(34, 36, 38, 0.15);
 }
 
+
 .ui.secondary.vertical.pointing.menu .item {
   border-bottom: none;
   border-right-style: solid;
@@ -24735,9 +24736,9 @@ Floated Menu / Item
 
 /* Vertical Active */
 
-.ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #1B1C1D;
-}
+/* .ui.secondary.vertical.pointing.menu .active.item {
+  border-color: #5B2392;
+} */
 
 /* Inverted */
 
