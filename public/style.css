@@ -151,8 +151,12 @@ footer{
   padding: 10px 50px;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
   width: 100vw;
-  background-color: #A16FDD;
+  color: white;
+  background-color: #537AD9;
   transition: all 0.5s ease-in-out;
+}
+.ui.secondary.vertical.pointing.menu .active.item {
+  border-color: #5B2392;
 }
 .nav__links {
   display: flex;
@@ -161,17 +165,18 @@ footer{
 }
 .nav__link {
   margin: 0 10px;
-  color: black;
+  color: white;
   padding: 5px 15px;
   border-radius: 100px;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
 }
 .nav__link:hover {
-  background-color: #bb9fdd;
-  color: black;
+  background-color: #3A5598
+;
+  color: white;
 }
-.wshop-logo h1 {
+.wshop-logo h2 {
   cursor: pointer;
 }
 #addnote-card{
