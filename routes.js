@@ -18,6 +18,7 @@ router.get('/start', start.index);
 router.get('/start/bin', start.binIndex);
 router.get('/start/deleteNote/:nid', start.deleteNote);
 router.get('/start/permaDelNote/:nid', start.permaDelNote);
+router.get('/start/restoreNote/:nid', start.restoreNote);
 
 // posting routes
 router.post('/register', reg.register);

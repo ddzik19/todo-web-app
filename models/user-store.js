@@ -100,6 +100,25 @@ const userStore = {
             return console.log(err + ": in deleteNotes function at line 84 user-store.js");
         }
     },
+    restoreNote(uid, nid) {
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == uid) {
+                    const bin = this.getDelUserNotes(uid);
+                    for (var x = 0; x < bin.length; x++) {
+                        if (bin[x].nid == nid) {
+                            data.users[i].notes.push(bin[x]);
+                            bin.splice(x, 1);
+                            this.saveData();
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (err) {
+            console.log(err + ": in restoreNote at line 107 user-store.js");
+        }
+    },
     saveData() {
         fs.writeFileSync("user-store.json", JSON.stringify(data, null, 2), "utf8", (err) => {
             if (err) console.log(err + ": in saveData at line 102 user-store.js");

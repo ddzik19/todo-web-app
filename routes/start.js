@@ -57,6 +57,17 @@ const start = {
             delNotes: userStore.getDelUserNotes(loggedInUser.id)
         };
         res.render('bin', viewData);
+    },
+    restoreNote(req, res) {
+        // getting the users id
+        const loggedInUser = accounts.getCurrentUser(req);
+
+        //getting the id of note
+        const id = req.params.nid;
+        // calling the restore note function from userStore
+        userStore.restoreNote(loggedInUser.id, id)
+        // refreshing page
+        res.redirect("/start/bin");
     }
 };
 

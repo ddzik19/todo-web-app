@@ -15,38 +15,19 @@
       "password": "123",
       "notes": [
         {
-          "nid": "s6tq698hs517k57nruol",
-          "title": "dada",
+          "nid": "hz2vfyeio5fr454a5e42",
+          "title": "hello",
+          "creationDate": "26/05/2022",
+          "content": []
+        },
+        {
+          "nid": "g8135941vhovo0035ekk",
+          "title": "hi",
           "creationDate": "26/05/2022",
           "content": []
         }
       ],
-      "bin": [
-        {
-          "nid": "75ch18b79fe2le173p92",
-          "title": "Hello",
-          "creationDate": "26/05/2022",
-          "content": []
-        },
-        {
-          "nid": "y3w35eu9e7p02mg8u47f",
-          "title": "yes",
-          "creationDate": "26/05/2022",
-          "content": []
-        },
-        {
-          "nid": "2tmvk1ytp1bdtdf2k663",
-          "title": "dada",
-          "creationDate": "26/05/2022",
-          "content": []
-        },
-        {
-          "nid": "29t620026hb73lfqx1s0",
-          "title": "damo",
-          "creationDate": "26/05/2022",
-          "content": []
-        }
-      ]
+      "bin": []
     },
     {
       "id": "2087j097ms11u5qp55ts",
