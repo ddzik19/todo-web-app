@@ -11,14 +11,9 @@
     margin-bottom: 5%;
 }
 .forms-container{
-    /* width: 100%;
-    padding-top: 10%;
-    padding-left: 28%;
-    padding-right: 28%; */
     display: flex;
     height: 500px;
     width: 800px;
-    /* border: 1px solid black; */
     margin: auto;
     margin-top: 10%;
     box-shadow: 15px 15px 20px black;
@@ -63,7 +58,7 @@
     margin-top: 20px;
 }
 .form a:hover{
-    color: red;
+    color: #A16FDD;
 }
 .form-side{
     display: flex;
@@ -75,23 +70,6 @@
 .form-side img{
     width: 450px;
     height: 450px;
-}
-
-.forms-deco{
-    max-height: 400px;
-}
-.forms-deco img{
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
-}
-.cform{
-    border-radius: 3px;
-    box-shadow: 3px 3px rgba(177, 177, 177, 0.459);
-}
-.form-center{
-    padding-top: 5em;
-    margin-left: 1em;
-    margin-right: 2em;
 }
 .banner{
     padding: 5em;
