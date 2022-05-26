@@ -18,7 +18,7 @@ const userStore = {
                 }
             }
         } catch (err) {
-            console.log(err + ": in getUserById at line 15 in  user-store.js")
+            console.log(err + ": in getUserById at line 21 in  user-store.js")
         }
     },
     getUserByEmail(email) {
@@ -29,7 +29,7 @@ const userStore = {
                 }
             }
         } catch (err) {
-            console.log(err + ": in getUserByEmail at line 22 user-store.js")
+            console.log(err + ": in getUserByEmail at line 32 user-store.js")
         }
     },
     addNote(id, note) {
@@ -48,6 +48,7 @@ const userStore = {
                     const unotes = this.getUserNotes(uid);
                     for (var x = 0; x < unotes.length; x++) {
                         if (unotes[x].nid == nid) {
+                            data.users.bin.push(unotes[x]);
                             unotes.splice(x, 1);
                             this.saveData();
                             return;
@@ -56,7 +57,7 @@ const userStore = {
                 }
             }
         } catch (err) {
-            return console.log(err + ": in deleteNotes function at line 33 user-store.js");
+            return console.log(err + ": in deleteNotes function at line 59 user-store.js");
         }
     },
     getUserNotes(id) {
@@ -66,14 +67,42 @@ const userStore = {
                     return data.users[i].notes;
                 }
             }
-            return unotes;
         } catch (err) {
-            console.log(err + ": in getUserNotes at line 45 user-store.js");
+            console.log(err + ": in getUserNotes at line 62 user-store.js");
+        }
+    },
+    getDelUserNotes(id) {
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == id) {
+                    return data.users[i].bin;
+                }
+            }
+        } catch (err) {
+            console.log(err + ": in getDelUserNotes at line 81 user-store.js");
+        }
+    },
+    permDelNote(uid, nid) {
+        try {
+            for (var i = 0; i < data.users.length; i++) {
+                if (data.users[i].id == uid) {
+                    const bin = this.getDelUserNotes(uid);
+                    for (var x = 0; x < bin.length; x++) {
+                        if (bin[x].nid == nid) {
+                            bin.splice(x, 1);
+                            this.saveData();
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (err) {
+            return console.log(err + ": in deleteNotes function at line 84 user-store.js");
         }
     },
     saveData() {
         fs.writeFileSync("user-store.json", JSON.stringify(data, null, 2), "utf8", (err) => {
-            if (err) console.log(err + ": in saveData at line 74 user-store.js");
+            if (err) console.log(err + ": in saveData at line 102 user-store.js");
             console.log("data saved!");
             console.log(data);
         });

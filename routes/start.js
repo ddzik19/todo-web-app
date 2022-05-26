@@ -39,14 +39,24 @@ const start = {
         // refreshing page
         res.redirect("/start")
     },
+    permaDelNote(req, res) {
+        const loggedInUser = accounts.getCurrentUser(req);
+        // getting the id of the note
+        const id = req.params.nid;
+
+        // passing the id to the deleteNote function in userStore
+        userStore.permDelNote(loggedInUser.id, id)
+        // refreshing page
+        res.redirect("/start")
+    },
     binIndex(req, res) {
         const loggedInUser = accounts.getCurrentUser(req);
 
         const viewData = {
-            title: loggedInUser.username + ' | Note App',
+            title: loggedInUser.username + '| Bin | Note App',
             delNotes: userStore.getDelUserNotes(loggedInUser.id)
         };
-        res.render('start', viewData);
+        res.render('bin', viewData);
     }
 };
 
