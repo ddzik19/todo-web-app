@@ -38,6 +38,15 @@ const start = {
         userStore.deleteNote(loggedInUser.id, id)
         // refreshing page
         res.redirect("/start")
+    },
+    binIndex(req, res) {
+        const loggedInUser = accounts.getCurrentUser(req);
+
+        const viewData = {
+            title: loggedInUser.username + ' | Note App',
+            delNotes: userStore.getDelUserNotes(loggedInUser.id)
+        };
+        res.render('start', viewData);
     }
 };
 
