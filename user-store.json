@@ -5,7 +5,8 @@
       "username": "damo",
       "email": "damo@gmail.com",
       "password": "123",
-      "notes": []
+      "notes": [],
+      "bin": []
     },
     {
       "id": "t7nad78g9x67e953u8i1",
@@ -14,40 +15,38 @@
       "password": "123",
       "notes": [
         {
-          "nid": "2tmvk1ytp1bdtdf2k663",
-          "title": "dada",
+          "nid": "hz2vfyeio5fr454a5e42",
+          "title": "hello",
           "creationDate": "26/05/2022",
           "content": []
         },
         {
-          "nid": "75ch18b79fe2le173p92",
-          "title": "Hello",
-          "creationDate": "26/05/2022",
-          "content": []
-        },
-        {
-          "nid": "y3w35eu9e7p02mg8u47f",
-          "title": "yes",
+          "nid": "g8135941vhovo0035ekk",
+          "title": "hi",
           "creationDate": "26/05/2022",
           "content": []
         }
-      ]
+      ],
+      "bin": []
     },
     {
       "id": "2087j097ms11u5qp55ts",
       "email": "damo123@gmail.com",
-      "notes": []
+      "notes": [],
+      "bin": []
     },
     {
       "id": "9se8g6u290hv86e41qp2",
       "email": "damo123@gmail.com",
-      "notes": []
+      "notes": [],
+      "bin": []
     },
     {
       "id": "f6s1xnn791608stlq3q7",
       "username": "damo11",
       "email": "damo11@gmail.com",
-      "notes": []
+      "notes": [],
+      "bin": []
     }
   ]
 }

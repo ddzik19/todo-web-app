@@ -1,4 +1,4 @@
-{{#each notes}}
+{{#each delNotes}}
 <div class="card">
     <div class="content">
         <div class="header">
@@ -10,9 +10,9 @@
     </div>
     <div class="extra content">
         <div class="ui large buttons">
-            <a class="ui button" style="width: 130px;" href="">Open</a>
+            <a class="ui button" style="width: 130px;" href="/start/restoreNote/{{nid}}">Restore</a>
             <div class="or"></div>
-            <a class="ui button" style="width: 130px;" href="/start/deleteNote/{{nid}}">Bin</a>
+            <a class="ui button" style="width: 130px;" href="/start/permaDelNote/{{nid}}">Delete</a>
         </div>
     </div>
 </div>
