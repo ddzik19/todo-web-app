@@ -48,7 +48,7 @@ const userStore = {
                     const unotes = this.getUserNotes(uid);
                     for (var x = 0; x < unotes.length; x++) {
                         if (unotes[x].nid == nid) {
-                            data.users.bin.push(unotes[x]);
+                            data.users[i].bin.push(unotes[x]);
                             unotes.splice(x, 1);
                             this.saveData();
                             return;
