@@ -85,9 +85,6 @@
 }
 .banner{
     padding: 5em;
-    width: auto;
-    height: 400px;
-    height: auto;
 }
 .banner-content{
     text-align: center;
@@ -95,9 +92,6 @@
 }
 .banner-content h1{
     font-size: 80px;
-}
-.banner-content p{
-    font-size: large;
 }
 .imageFrame{
     background-color: black;
