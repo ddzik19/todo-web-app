@@ -4,11 +4,23 @@
 /*  */
 
 .main-body{
-    width: auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 900px;
+    display: flex;
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+.index-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#indexform{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    flex-direction: column;
 }
 .forms-container{
     display: flex;
@@ -91,9 +103,6 @@
     background-color: black;
     width: 500px;
     height: 500px;
-}
-#indexform{
-    padding: 2em;
 }
 
 /* navigation */
