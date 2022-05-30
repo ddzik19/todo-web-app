@@ -47,7 +47,7 @@ const start = {
         // passing the id to the deleteNote function in userStore
         userStore.permDelNote(loggedInUser.id, id)
         // refreshing page
-        res.redirect("/start")
+        res.redirect("/start/bin")
     },
     binIndex(req, res) {
         const loggedInUser = accounts.getCurrentUser(req);

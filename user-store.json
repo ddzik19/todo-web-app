@@ -13,21 +13,27 @@
       "username": "damo123",
       "email": "damo123@gmail.com",
       "password": "123",
-      "notes": [],
-      "bin": [
+      "notes": [
         {
-          "nid": "8lkuv8es7r3o6o2555lz",
-          "title": "awdawd",
+          "nid": "hrn89ik64qcio76x12m0",
+          "title": "awd",
           "creationDate": "30/05/2022",
           "content": []
         },
         {
-          "nid": "0407a2l0iim11nk11ok2",
-          "title": "vutv",
+          "nid": "88674q7m5y51c40rw1w8",
+          "title": "awd",
+          "creationDate": "30/05/2022",
+          "content": []
+        },
+        {
+          "nid": "90f9q2c1m444k0xmwi44",
+          "title": "awd",
           "creationDate": "30/05/2022",
           "content": []
         }
-      ]
+      ],
+      "bin": []
     },
     {
       "id": "2087j097ms11u5qp55ts",
