@@ -10,6 +10,9 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.sidemenu-container{
+    padding-right:30em ;
+}
 .index-container{
     display: flex;
     flex-direction: column;
