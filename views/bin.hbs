@@ -1,17 +1,15 @@
 {{> workshopNav}}
-<div class="main-body">
-    <div class="ui grid">
-        <div class="four wide column">
-            {{!-- {{> sidemenu id='bin'}} --}}
-            <div class="sidemenu-container">
-                <div class="ui secondary vertical pointing menu">
-                    <a id="start" href="/start" class="item">Notepads</a>
-                    <a id="bin" href="/start/bin" class="active item">Bin</a>
-                    <a id="settings" href="" class="item">Settings</a>
-                </div>
+<div class="start-container">
+    <div class="ui two column centered grid">
+        <div class="two wide column">
+            <div class="ui secondary vertical pointing menu">
+                <a id="start" href="/start" class="item">Notepads</a>
+                <a id="bin" href="/start/bin" class="active item">Bin</a>
+                <a id="settings" href="" class="item">Settings</a>
             </div>
         </div>
-        <div class="twelve wide column">
+        <div class="column">
+            <h2>My Bin</h2>
             <div class="ui cards">
                 {{> binNotes}}
             </div>
