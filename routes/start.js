@@ -12,6 +12,7 @@ const start = {
             title: loggedInUser.username + ' | Note App',
             notes: userStore.getUserNotes(loggedInUser.id)
         };
+
         res.render('start', viewData);
     },
     addNote(req, res) {

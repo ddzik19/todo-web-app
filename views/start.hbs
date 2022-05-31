@@ -2,7 +2,14 @@
 <div class="main-body">
     <div class="ui grid">
         <div class="four wide column">
-            {{> sidemenu id='start'}}
+            {{!-- {{> sidemenu id='start'}} --}}
+            <div class="sidemenu-container">
+                <div class="ui secondary vertical pointing menu">
+                    <a id="start" href="/start" class="active item">Notepads</a>
+                    <a id="bin" href="/start/bin" class="item">Bin</a>
+                    <a id="settings" href="" class="item">Settings</a>
+                </div>
+            </div>
         </div>
         <div class="twelve wide column">
             <div class="ui cards">
