@@ -4,15 +4,22 @@
 /*  */
 /* main body content */
 .main-body{
-    width: 900px;
+    width: 1200px;
     display: flex;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.sidemenu-container{
-    padding-right:30em ;
+.start-container{
+    margin-top: 5em;
 }
+.line{
+    border: 0 solid black;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.151);
+    width: 100%;
+}
+
 .index-container{
     display: flex;
     flex-direction: column;
