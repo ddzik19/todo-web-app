@@ -14,16 +14,15 @@ The website will be hosted on [Heroku.com](https://www.heroku.com/) around the 3
 
 ## Features
 
-This web app will allow the users to:
-- log in
-- create lists
-- add content to the lists
-- delete lists
-- edit lists
+Currently this app allows the users to:
+- signup
+- login
+- add note
+- move note to bin
+- restore note from bin
+- delete note from bin
 
-Lists will be persistent and only lists created by the user will be displayed.
-
-In the future I want to implement the use of Firebase database instead of storing information in a JSON file. 
+The notes are persistent and linked to user, meaning other users will only see their own notes.
 
 ## Contribution
 
